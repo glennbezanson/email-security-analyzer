@@ -1,0 +1,44 @@
+{
+  "abnormal": {
+    "base_url": "https://api.abnormalplatform.com",
+    "api_key": "",
+    "api_version": "v1"
+  },
+  "azure": {
+    "tenant_id": "YOUR_TENANT_ID",
+    "client_id": "",
+    "client_secret": "",
+    "subscription_id": "YOUR_SUBSCRIPTION_ID"
+  },
+  "claude": {
+    "endpoint": "https://YOUR_APIM_ENDPOINT.azure-api.net/foundry",
+    "api_key": "",
+    "model": "claude-sonnet-4-20250514",
+    "max_tokens": 4096,
+    "api_version": "2024-10-21"
+  },
+  "settings": {
+    "refresh_interval_minutes": 5,
+    "threat_lookback_hours": 24,
+    "case_lookback_days": 7,
+    "cache_ttl_minutes": 15,
+    "auto_analyze": false,
+    "auto_diagnose": true
+  },
+  "diagnostics": {
+    "enabled_rules": [
+      "auth_spf_permerror",
+      "auth_dkim_missing",
+      "auth_dmarc_fail",
+      "flow_connector_loop",
+      "flow_queue_delay",
+      "threat_post_delivery_gap",
+      "threat_html_smuggling",
+      "threat_qr_code_phishing",
+      "threat_inbox_rule_persistence",
+      "threat_oauth_consent_phishing",
+      "integration_token_expiry",
+      "integration_rate_limit"
+    ]
+  }
+}
